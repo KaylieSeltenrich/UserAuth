@@ -15,7 +15,7 @@ function login(){
        document.getElementById("login-status").innerHTML = "LOGIN SUCCESS";
        let tokenObject = JSON.parse(this.responseText);
        
-     Cookies.set("email", emailInput);
+     Cookies.set("email", dataObject.email);
      Cookies.set("token", tokenObject.token);
      window.open("home.html", "_self");
      
